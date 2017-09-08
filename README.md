@@ -1,3 +1,5 @@
+DO NOT USE - Several key bugs in this version.  New working version coming with support for multi-objective and discrete experiments with publication.
+
 # Dynamic-Sample v0.1
 
 Scripts to execute a supervised learning approach for Dynamic Sampling.  Limited documentation currently available and code is still heavily in flux, your mileage may vary.  To be done:

@@ -18,6 +18,7 @@ multiprocess 0.70.5
 numpy 1.11.3
 scikit-learn 0.18.1
 scikit-image 0.12.3
+h5py 2.6.0
 ```
 
 ## Running the scripts

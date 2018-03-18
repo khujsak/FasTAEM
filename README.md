@@ -1,30 +1,34 @@
-DO NOT USE - Several key bugs in this version.  New working version coming with support for multi-objective and discrete experiments with publication.
+# A Parallelized Multi-Objective Dynamic Sampling Framework for Analytical Electron Microscopy
 
-# Dynamic-Sample v0.1
+This is a work in progress supplement to the publication [Hujsak, Karl A., et al. "High Speed/Low Dose Analytical Electron Microscopy with Dynamic Sampling." Micron (2018)](https://www.sciencedirect.com/science/article/pii/S0968432817304821).  
 
-Scripts to execute a supervised learning approach for Dynamic Sampling.  Limited documentation currently available and code is still heavily in flux, your mileage may vary.  To be done:
+## Getting Started
 
-1.  Flesh out Documentation
-2.  Improve variable names and commonality
-3.  Randomized Training Images
-4.  Bayesian Linear Regression
-5.  Posterior Predictive Variance Estimates
-6.  Discrete Images and Classification Inpainting
-7.  Hyperspectral Approaches
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-Currently only works in an environment like spyder.  Will not work currently executed in a command line.
+### Prerequisites
 
-To execute:
+Currently tested with:
 
-1.  Run distance matrix calculation.  This precomputes a large distance matrix for evaluating distances very quickly in the main code.  This creates a variable named 'disbig' which is important to have sitting in memory for future calculations.
-2.  Run training script with your training images, which will store several .npy files for the Value and Feature vectors in your current directory.
-3.  Train the coefficients, currently only available using least squares, eventually will include a Bayesian approach for estimating posterior predictive variance during an experiment.
-4.  Simulate sequential imaging with make predictions.
+```
+python 3.5.3
+multiprocess 0.70.5
+numpy 1.11.3
+scikit-learn 0.18.1
+scikit-image 0.12.3
+```
 
-No parameter estimates are automatically done, so play around with c and L to have a good fit.  Currently uses a Navier Stokes inpainting step from OpenCV, but eventually will also support a simple nearest neighbors approach.
+## Running the scripts
 
-Only supports continuous images, support for discrete and hyperspectral ongoing.
+```
+python DynamicImageClass.py -n TrainingImage.py
+```
 
-Requires:
+## Authors
 
-Numpy, scipy, OpenCv 3, Numba (remove the @jit decorators in the dynsamp file if not), ect.
+* **Karl Hujsak** - *Initial work* - [khujsak](https://github.com/khujsak)
+
+
+## Acknowledgments
+
+* G. M. Dilshan Godaliyadda

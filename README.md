@@ -24,7 +24,7 @@ h5py 2.6.0
 ## Running the scripts
 
 ```
-python DynamicImageClass.py -n TrainingImage.py
+python DynamicImageClass.py -n TrainingImage.tif
 ```
 
 ## Authors
